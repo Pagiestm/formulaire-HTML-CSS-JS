@@ -4,19 +4,11 @@ function verification() {
         alert("Attention : Votre login doit contenir 8 lettres au minimum !");
         return false;
     }
+    if (document.getElementById("pass").value != document.getElementById("confirm_password").value) {
+        alert("Les mots de passe ne correspondent pas");
+        return false;
+    }
     else {
         return true;
     }
-    var a = document.getElementById("pass").value;
-    var b = document.getElementById("confirm_password").value;
-
-    if (a != b) {
-        alert("Les mots de passe ne correspondent pas.");
-        return false;
-    }
-    else {
-        alert("Les mots de passe correspondent.");
-        return false;
-    }
-
 }
