@@ -5,50 +5,47 @@
     <meta charset="utf-8">
     <title>Formulaire HTML</title>
     <link rel="stylesheet" href="style.css">
+
     <script src="script.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        <h1> Formulaire D'inscription</h1>
 
-    <h1> Formulaire D'inscription</h1>
+        <form method="post" action="traitement.php" onsubmit="return verification()">
 
-    <form method="post" action="traitement.php" onsubmit="return verification()">
+            <label for="login">Login :</label>
+            <input type="text" name="login" id="login" placeholder="Indiquez votre Login" required><br>
 
-        <label for="login">Login :</label>
-        <input type="text" name="login" id="login" placeholder="Indiquez votre Login" required><br>
+            <br>
 
-        <br>
+            <label for="pass">Mot de passe :</label>
+            <input type="password" name="pass" id="pass" placeholder="Indiquez un mot de passe" required><br>
 
-        <label for="pass">Mot de passe :</label>
-        <input type="password" name="pass" id="pass" placeholder="Indiquez un mot de passe" required><br>
+            <br>
 
-        <br>
+            <label>Confirmer votre Mot de passe :</label>
+            <input type="password" name="confirm_password" id="confirm_password"
+                placeholder="Vérifier votre Mot de passe" required><br>
 
-        <label>Confirmer votre Mot de passe :</label>
-        <input type="password" name="confirm_password" id="confirm_password" placeholder="Vérifier votre Mot de passe"
-            required><br>
+            <br>
 
-        <br>
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email"><br>
 
-        <label for="email">Email :</label>
-        <input type="email"><br>
+            <br>
 
-        <br>
-
-        <input type="checkbox" name="mensualités" id="mensualités" />
-        <label for="mensualités">Je souhaite m'abonner aux mensualités</label>
-
-
-        <br>
-        <br>
-
-        <input type="submit" value="S'inscrire">
+            <input type="checkbox" name="mensualités" id="mensualités" />
+            <label for="mensualités">Je souhaite m'abonner aux mensualités</label>
 
 
+            <br>
+            <br>
 
-
-
-    </form>
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
 
 </body>
 
