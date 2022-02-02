@@ -31,13 +31,15 @@
             <input class="form-control" type="email" name="email" id="email" placeholder="veuillez indiquer votre Email..."><br>
 
             <input class="btn-check" type="checkbox" name="checkbox" id="checkbox" onchange="check()"/>
-            <label class="btn btn-outline-primary" for="checkbox">Je souhaite m'abonner aux mensualités</label><br>
+            <label class="btn btn-outline-primary" for="checkbox">Je souhaite m'abonner aux mensualités</label><br> <!--Ajout de bootstrap pour le checkbox : pour rendre propre le rendu mais ce comporte comme un checkbox-->
 
             
-            <select class="form-select" name="choisir" id="choisir">
-                <option value="pro">Promos</option>
-                <option value="news">Les Noueautés</option>
-            </select>
+            <div class="form-check" name="choisir" id="choisir">
+                <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox">
+                <label class="form-check-label" for="checkbox">Promos</label><br>
+                <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox">
+                <label class="form-check-label" for="checkbox">Les Nouveautés</label><br>
+            </div>
 
             <br>
             <div class="center">
