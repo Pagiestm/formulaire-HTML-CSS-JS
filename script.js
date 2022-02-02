@@ -9,21 +9,14 @@ function verification() {
         return false;
     }
     var email = document.getElementById("email").value;
-
-    if (checkEmail(email)) {
+    if (((email.endsWith(".com")) || email.endsWith(".fr")) || email.endsWith(".net")) {
         return true;
     }
-    else{
+    else {
         alert('Adresse e-mail non valide');
         return false;
     }
 }
-
-function checkEmail(email) {
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-}
-
 function check() {
     CheckBox = document.getElementById("checkbox");
     if (CheckBox.checked) {
